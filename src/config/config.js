@@ -31,10 +31,10 @@ if(!process.env.GOOGELE_REFRESH_TOKEN) {
     process.exit(1);
 }
 
-// if(!process.env.GOOGLE_ACCESS_TOKEN) {
-//     console.error("GOOGLE_ACCESS_TOKEN is not defined in the environment variables");
-//     process.exit(1);
-// }
+if(!process.env.GOOGLE_ACCESS_TOKEN) {
+    console.error("GOOGLE_ACCESS_TOKEN is not defined in the environment variables");
+    process.exit(1);
+}
 
 if(!process.env.GOOGELE_USER_EMAIL) {
     console.error("GOOGELE_USER_EMAIL is not defined in the environment variables");
